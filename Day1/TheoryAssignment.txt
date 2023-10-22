@@ -1,0 +1,56 @@
+Q. What is Emmet?
+Answer:-    Emmet is plugin used by text editors which can improve the html and css workflow!
+            for example we need basic skeleton of html in vs code which includes html tag, head tag , body tag etc by typing ! in vs code it gives us skeleton.
+            for creating element:- div{This is div} -> <div>this is div</div>
+                                    h1{this is h11} -> <h1> this is h1 </h1>
+            for creating nested elements: div>ul>li{$-10}*5
+            > creates child element + creates sibling
+            - is for direction for eg in above case it will print 14 13 12 11 10
+            e.t.c
+            link:- https://medium.com/@kartik2406/web-development-with-vs-code-part-1-emmet-6af80f0f630c
+
+
+Q. What is difference between library and framework ?
+Answer:-    The framework is somethig which controls the flow of the application, While usng framework, it tells user 
+            where users input is needed, where while using library, user controls the flow he can use the lib also only to the 
+            specific part of his code.
+            link:- https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/
+    
+
+Q.What is CDN? why do we use it?
+Answer:-    CDN is content delivery network. it focusses on reducing the physical distance between the end user and the server 
+            on which the website is hosted. there are multiple servers at different locations which cache of content on each server.
+            so the neares one can process the end users request.
+            link: https://medium.com/pixboost/cdn-explained-why-when-and-how-to-use-it-for-your-website-7d360a93cc04
+
+
+Q.Why is React known as React?
+Answer:-    React is called React because when the data in the application changes the component depends on that data re-renders 
+            itself, inseted of manipulating DOM, becausing of this reactive nature of the library it called as react.
+            Link:- https://medium.com/@dhawalpandya/why-is-react-called-react-92f83b10aeac
+
+
+Q.What is crossorigin in script tag?
+Answer:-    crossorigin attribute sets the mode of request to  the HTTP CORS request;
+            CORS stands for cross origin resource sharing means by setting this attribute we can request for the files that are hosted
+            on diffrent domain than ours.
+            link:- https://www.w3schools.com/tags/att_script_crossorigin.asp#:~:text=The%20crossorigin%20attribute%20sets%20the,or%20scripts)%20from%20another%20domain.
+
+
+Q. What is the difference between React and ReactDOM?
+Answer:-    The React is js library designed for building UI component while
+            The React React DOM is something which glues those components to the browser.
+
+Q. async vs defer attributes
+Answer:-  Here async and defer are the attributes of script tag in html.
+a) <script src="">
+When we write above syntax the Html parser runs until it encounters script tag then fetches the scripts from the network 
+then executes it then continues parsing.
+b) <script async src="">
+when we write above syntax html parser runs and also parallaly fetches the script from network, 
+when encounters the script tag executes it then continue pasing html.
+c)<script defer src="">
+when we use above syntax html parser runs, fetches script from network parallay, complete the parsing then executes the fetched script.
+
+The key difference between async and defer is async does not maintain order of execution but defer does it.
+when we have dependecy of one script tag on anoher we should not use async, defer is preferable.
